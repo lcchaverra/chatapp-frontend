@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# Frontend - Chat en Tiempo Real
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es el frontend para el chat en tiempo real, desarrollado con **React** usando **PrimeReact** para los componentes de interfaz y **Vite** como bundler para una experiencia de desarrollo rápida.
 
-Currently, two official plugins are available:
+## Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Framework de JavaScript para construir interfaces de usuario.
+- **PrimeReact**: Biblioteca de componentes UI para React, que proporciona un conjunto completo de componentes listos para usar.
+- **Vite**: Bundler rápido y moderno para aplicaciones de frontend.
+- **Socket.IO-client**: Para la comunicación en tiempo real con el backend.
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Para iniciar el proyecto frontend, sigue los pasos a continuación:
 
-- Configure the top-level `parserOptions` property like this:
+### Prerrequisitos
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Node.js (versión 16 o superior) instalado en tu máquina.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Pasos de instalación
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clona el repositorio del frontend:
+   ```bash
+   git clone https://github.com/lcchaverra/chatapp-frontend
