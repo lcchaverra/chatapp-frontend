@@ -5,7 +5,6 @@ import { Card } from "primereact/card";
 import axios from "axios";
 
 const Chat = ({ userId }) => {
-  console.log(userId);
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState("");
   const chatContainerRef = useRef(null);

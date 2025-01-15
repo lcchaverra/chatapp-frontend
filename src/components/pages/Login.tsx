@@ -48,7 +48,6 @@ const Login = () => {
             if (response.ok) {
                 const data = await response.json();
                 toast.current.show({severity:'success', summary: 'Exitoso', detail:'Inicio de Sesión exitoso', life: 3000});
-                console.log(data);
                 localStorage.setItem("token", data.token);
                 localStorage.setItem("user_id", data.userid);
                 navigation("/virtualclasss");
