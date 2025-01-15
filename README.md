@@ -22,3 +22,7 @@ Para iniciar el proyecto frontend, sigue los pasos a continuación:
 1. Clona el repositorio del frontend:
    ```bash
    git clone https://github.com/lcchaverra/chatapp-frontend
+
+2. instalar dependencias con el comando: npm install
+
+3. correr el proyecto con el comando: npm run dev
